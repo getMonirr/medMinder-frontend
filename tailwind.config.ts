@@ -9,8 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "pill-bg": "#C12A5D",
+        // "pill-bg": "#C12A5D",
+        "pill-bg": "#FFF7E2",
         "second-pill": "#FE9797",
+        "text-color": "#3a643b",
       },
     },
   },

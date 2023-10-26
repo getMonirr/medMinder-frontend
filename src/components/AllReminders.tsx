@@ -81,18 +81,18 @@ const AllReminders = () => {
                       </p>
                       <div className="card-actions justify-end">
                         <button
-                          className="btn btn-sm btn-circle btn-outline group   hover:bg-pill-bg group hover:border-none"
+                          className="btn btn-sm btn-circle btn-outline group hover:bg-[#ff4e00] group hover:border-none"
                           onClick={() => deleteReminder(_id)}
                         >
-                          <FaTrashAlt className="text-pill-bg group-hover:text-white" />
+                          <FaTrashAlt className="text-[#ff4e00] group-hover:text-white" />
                         </button>
                         <button
                           onClick={() =>
                             openModal({ medicationName, frequency, time, _id })
                           }
-                          className="btn btn-sm btn-circle btn-outline group   hover:bg-fuchsia-500 group hover:border-none"
+                          className="btn btn-sm btn-circle btn-outline group   hover:bg-text-color group hover:border-none"
                         >
-                          <FaEdit className="text-fuchsia-500 group-hover:text-white" />
+                          <FaEdit className="text-text-color group-hover:text-white" />
                         </button>
                       </div>
                     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import banner1 from "@/assets/banner1.jpg";
 import banner2 from "@/assets/banner2.jpg";
 import banner3 from "@/assets/banner3.jpg";
+import MadhuPanchamrut from "@/assets/Madhu-Panchamrut.jpg";
 import Link from "next/link";
 
 const Banner = () => {
@@ -9,8 +10,8 @@ const Banner = () => {
     <div
       className="hero min-h-[calc(100vh-67px)]"
       style={{
-        backgroundImage: `url(${banner2.src})`,
-        backgroundPosition: "bottom right",
+        backgroundImage: `url(${MadhuPanchamrut.src})`,
+        backgroundPosition: "center center",
       }}
     >
       <div className="hero-overlay bg-opacity-40"></div>
@@ -20,13 +21,15 @@ const Banner = () => {
             Welcome MedMinder app
           </h1>
           <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            “If one were to look well enough, we could find solutions to all our
+            problems in the texts left behind by our ancestors,”
+            <span className="bg-text-color text-white p-1 rounded-lg font-bold italic">
+              adds Mr. Gupta
+            </span>
           </p>
           <Link href="/reminder">
-            <button className="btn btn-primary bg-pill-bg border-none">
-              Create reminder
+            <button className="btn btn-primary bg-text-color hover:bg-teal-700 border-none">
+              Elixir of Life
             </button>
           </Link>
         </div>

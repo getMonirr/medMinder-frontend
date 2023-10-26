@@ -9,7 +9,7 @@ import AllProvider from "@/provider/AllProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MedMinder App",
+  title: "MedMinder App | Amrutam",
   description: "Reminder your medicine take",
 };
 

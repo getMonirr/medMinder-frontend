@@ -51,7 +51,7 @@ export default function Modal({
                   <div className="mt-4 flex items-center justify-end">
                     <button
                       type="button"
-                      className="inline-flex justify-end rounded-md border border-transparent bg-pill-bg px-4 py-2 text-sm font-medium text-white hover:bg-second-pill focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 ml-auto"
+                      className="inline-flex justify-end rounded-md border border-transparent bg-[#ff4e00] px-4 py-2 text-sm font-medium text-white hover:bg-second-pill focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 ml-auto"
                       onClick={closeModal}
                     >
                       Cancel

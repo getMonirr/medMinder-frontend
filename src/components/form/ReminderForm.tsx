@@ -48,7 +48,7 @@ const ReminderForm = () => {
     }
   };
   return (
-    <div className="md:max-w-md w-full bg-second-pill p-8 rounded-md shadow-2xl">
+    <div className="md:max-w-md w-full bg-pill-bg p-8 rounded-md shadow-2xl">
       <h2 className="text-2xl font-bold">Create Medication Reminder</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="card-body">
         <div className="form-control">
@@ -77,7 +77,7 @@ const ReminderForm = () => {
         </div>
         <div className="form-control w-full max-w-xs">
           <label className="label">
-            <span className="label-text">Pick the best fantasy franchise</span>
+            <span className="label-text">Select your Frequency</span>
           </label>
           <select className="select select-bordered" {...register("frequency")}>
             <option disabled selected>
@@ -103,7 +103,7 @@ const ReminderForm = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary bg-pill-bg border-none">
+          <button className="btn btn-primary bg-text-color hover:bg-teal-700 border-none">
             Create Reminder
           </button>
         </div>

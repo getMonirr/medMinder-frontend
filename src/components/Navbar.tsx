@@ -8,7 +8,7 @@ import Image from "next/image";
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
   return (
-    <div className="bg-pill-bg text-white">
+    <div className="bg-pill-bg text-text-color">
       <RootLayout>
         <div className="navbar bg-pill-bg text-white">
           <div className="navbar-start">
@@ -33,30 +33,45 @@ const Navbar = async () => {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li>
+                <li className="text-text-color">
                   <Link href="/">Home</Link>
                 </li>
                 <li>
                   <Link href="/reminder">Set Reminder</Link>
                 </li>
+                <li className="text-text-color">
+                  <Link href="https://amrutam.co.in/pages/our-story-the-journey-of-amrutam-1">
+                    About Us
+                  </Link>
+                </li>
               </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-xl">MedMinder</a>
+            <a className="btn btn-ghost normal-case text-xl text-text-color">
+              MedMinder
+            </a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-              <li>
+              <li className="text-text-color">
                 <Link href="/">Home</Link>
               </li>
-              <li>
+              <li className="text-text-color">
                 <Link href="/reminder">Set Reminder</Link>
+              </li>
+              <li className="text-text-color">
+                <Link href="https://amrutam.co.in/pages/our-story-the-journey-of-amrutam-1">
+                  About Us
+                </Link>
               </li>
             </ul>
           </div>
           <div className="navbar-end">
             {session ? (
               <>
-                <Link href="/api/auth/signout" className="btn mr-4">
+                <Link
+                  href="/api/auth/signout"
+                  className="btn bg-text-color text-white mr-4"
+                >
                   SingOut
                 </Link>
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -71,7 +86,10 @@ const Navbar = async () => {
                 </label>
               </>
             ) : (
-              <Link href="/api/auth/signin" className="btn">
+              <Link
+                href="/api/auth/signin"
+                className="btn bg-text-color text-white"
+              >
                 Login
               </Link>
             )}
